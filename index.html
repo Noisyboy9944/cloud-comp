@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App with Custom Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <p class="counter-container">You have <span id="task-counter">0</span> pending tasks</p>
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-task-btn">Add</button>
+        </div>
+        <ul id="task-list">
+            </ul>
+        <button id="clear-all-btn">Clear All Tasks</button>
+    </div>
+
+    <div id="confirm-modal-overlay" class="modal-overlay"></div>
+    <div id="confirm-modal" class="modal">
+        <p>Are you sure you want to delete all tasks?</p>
+        <div class="modal-buttons">
+            <button id="modal-btn-no">No</button>
+            <button id="modal-btn-yes">Yes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
